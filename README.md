@@ -1,50 +1,95 @@
-# Welcome to your Expo app 👋
+# DevHub - AI-Powered Career Companion 🚀
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+DevHub is an AI-powered career companion mobile application designed specifically for developers. It provides job listings, coding challenges, and personalized career guidance. Built using React Native, this app offers a seamless and engaging user experience with robust features tailored for the developer community.
 
-## Get started
+## 📖 Description
 
-1. Install dependencies
+DevHub is built to assist developers in exploring job opportunities, practicing coding challenges, and gaining personalized career advice. The app is designed with a focus on usability, offering features like search and filters for a smooth user experience.
 
-   ```bash
-   npm install
-   ```
+With the power of AI, future updates will include personalized job recommendations, interview preparation tips, and tailored career paths.
 
-2. Start the app
+## ⚙️ Tech Stack
 
-   ```bash
-    npx expo start
-   ```
+- **React Native** - For cross-platform mobile application development.
+- **Expo Router** - For navigation and routing within the app.
+- **TailwindCSS** - For responsive and modern UI design.
+- **Clerk** - For secure and easy user authentication.
+- **Firebase** - (Planned) For backend services like Firestore and cloud functions.
+- **Axios** - For API integration and data fetching.
+- **Codeforces API** - To fetch coding challenges and problem sets.
+- **TypeScript** - Ensures type safety and better maintainability.
 
-In the output, you'll find options to open the app in a
+## 🚀 Features Implemented
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Authentication**: User authentication using Clerk for secure and seamless login.
+- **Job Listings**:
+  - Browse and search for developer jobs from various sources.
+  - Filter jobs by type (Full-time, Part-time, Contractor).
+  - Search jobs by title, company, or type.
+- **Challenges Section**: Integrates with the Codeforces API to provide coding challenges:
+  - Search challenges by name and tags.
+  - Filter challenges by difficulty rating using FlatList.
+  - Pagination for a smoother browsing experience.
+- **Profile and Settings**:
+  - View and update user profile details.
+  - Data fetched using Clerk's `UseUser`.
+- **UI/UX Enhancements**:
+  - Intuitive design with TailwindCSS for a modern look and feel.
+  - Smooth transitions and user interactions.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## 🔨 Features In Progress / Left to Build
 
-## Get a fresh project
+- **AI Integration**:
+  - Personalized career guidance and recommendations.
+  - Resume builder powered by AI for optimized job applications.
+- **Interview Preparation**:
+  - Curated questions and mock interview simulations.
+- **Firebase Integration**:
+  - For cloud storage, real-time database, and push notifications.
+- **Bookmark and Save**:
+  - Save favorite jobs and challenges for later.
+- **User Analytics**:
+  - Track user engagement and activity for better insights.
 
-When you're ready, run:
+
+## 🚀 Getting Started
+### Prerequisites
+
+- Node.js (v18.x.x or later)
+- Expo CLI (`npm install -g expo-cli`)
+- Git (to clone the repository)
+
+### Step-by-Step Guide
+
+### 1️⃣ Clone the Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/RaizelShah/DevHub.git
+cd DevHub
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 2️⃣ Install Dependencies
 
-## Learn more
+```bash
+npm install  # or yarn install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 3️⃣ Set Up Environment Variables
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Create a `.env` file in the root directory and add API keys:
 
-## Join the community
+```env
+EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_api_key
+RAPID_API_KEY=your_rapid_api_key
+```
 
-Join our community of developers creating universal apps.
+### 4️⃣ Run the App
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm run start  # or expo start
+```
+
+### 📩 Contact
+
+📧 Email: [shahraizel11@email.com](mailto\:shahraizel11@email.com)\
+
